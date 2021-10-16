@@ -37,7 +37,7 @@ Para racionar seus mantimentos, o Traveler poderá:
 
 - hunt(Caçar): Quando o Traveler sair para caçar, a quantidade de comida deve aumentar em 2.
 - eat(Comer): Quando o Traveler tentar comer, caso a quantidade de comida for maior que 0, então o Traveler perde 1 comida, e continua saudável. Caso a quantidade for 0, então o Traveler não consegue comer e fica doente.
-
+ 1  
 ## Wagon
 Uma `Wagon` (Carroça) também tem algumas propriedades:
 - uma `capacity` (capacidade) (número), que deve ser fornecida como parâmetro para o construtor, determina a quantidade máxima de passageiros que cabe na carroça.
