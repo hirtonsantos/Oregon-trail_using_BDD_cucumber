@@ -72,8 +72,10 @@ class Wagon {
     }
 
     join (variavel){
-        if (this.getAvailableSeatCount() <= 10){
+        if (this.getAvailableSeatCount() <= this.capacity){
+            if (this.getAvailableSeatCount() !== 0){
             this.passengers.push(variavel)
+            }
         } 
     }
 
