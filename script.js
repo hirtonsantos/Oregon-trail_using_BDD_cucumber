@@ -1,20 +1,44 @@
 
 class Traveler {
     constructor (name){
-        this.name = name
+        this._name = name
         this._food = 1
-        this.isHealthy = true
+        this._isHealthy = true
+    }
+
+    set nome(nome){
+        this._name = nome
+    }
+
+    get nome(){
+        return this._name
+    }
+
+    set food (food){
+        this._food = food
+    }
+
+    get food(){
+        return this._food
+    }
+
+    set isHealthy (isHealthy){
+        this._isHealthy = isHealthy
+    }
+
+    get isHealthy (){
+        return this._isHealthy
     }
 
     hunt(){
-        this._food += 2
+        this.food += 2
     }
 
     eat(){
-        if (this._food > 0){
-            this._food -= 1
+        if (this.food > 0){
+            this.food -= 1
         }
-        else if (this._food === 0){
+        else if (this.food === 0){
             this.isHealthy = false
         }
     }
@@ -23,12 +47,24 @@ class Traveler {
 class Wagon {
 
     constructor (capacity){
-        this.capacity = capacity
-        this.passengers = []
+        this._capacity = capacity
+        this._passengers = []
     }
 
-    get passageiros(){
-        return this.passengers
+    set passengers (passengers){
+        this._passengers = passengers
+    }
+
+    set capacity (capacity){
+        this._capacity = capacity
+    }
+
+    get passengers(){
+        return this._passengers
+    }
+
+    get capacity(){
+        return this._capacity
     }
 
     getAvailableSeatCount(){
@@ -43,8 +79,8 @@ class Wagon {
 
     shouldQuarantine () {
         let result = true
-        for (let i = 0; i < this.passageiros.length; i++) {
-            if (this.passageiros[i].isHealthy === false){
+        for (let i = 0; i < this.passengers.length; i++) {
+            if (this.passengers[i].isHealthy === false){
                 result = true
             }
         }
@@ -53,8 +89,8 @@ class Wagon {
 
     totalFood () {
         let food = 0
-        for (let i = 0; i < this.passageiros.length; i++) {
-            food = food + this.passageiros[i]._food
+        for (let i = 0; i < this.passengers.length; i++) {
+            food = food + this.passengers[i].food
         }
         return food
     }
