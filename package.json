@@ -1,0 +1,22 @@
+{
+  "name": "entrega-oregon-trail-sintaxe-classe-sprint-6-hirtonsantos",
+  "version": "1.0.0",
+  "description": "Para começar, faça o clone desse repositório.",
+  "main": "App.js",
+  "scripts": {
+    "test": "cucumber-js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kenzie-Academy-Brasil-Developers/entrega-oregon-trail-sintaxe-classe-sprint-6-hirtonsantos.git"
+  },
+  "author": "hirtonsantos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kenzie-Academy-Brasil-Developers/entrega-oregon-trail-sintaxe-classe-sprint-6-hirtonsantos/issues"
+  },
+  "homepage": "https://github.com/Kenzie-Academy-Brasil-Developers/entrega-oregon-trail-sintaxe-classe-sprint-6-hirtonsantos#readme",
+  "devDependencies": {
+    "@cucumber/cucumber": "^8.0.0-rc.1"
+  }
+}

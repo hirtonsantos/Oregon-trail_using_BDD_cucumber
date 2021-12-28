@@ -1,8 +1,4 @@
-# Entrega: Oregon Trail com Sintaxe de Classe
-
-Para começar, faça o clone desse repositório.
-
-Revise a aula de Sintaxe de Classe e veja como criar um objeto de classe usando uma função construtora para instanciar propriedades e definir os métodos comum a todas as instâncias da classe, utilizando **sintaxe de classe**. Aqui está um exemplo:
+# Entrega: Oregon Trail com Sintaxe de Classe com testes usando BDD
 
 ```javascript
 class Dog {
@@ -20,8 +16,6 @@ class Dog {
    }
 }
 ```
-
-Seguindo este exemplo, crie dois tipos diferentes de classes usando funções construtoras e métodos: um `Traveler` (Viajante) e uma `Wagon` (Carroça).
 
 ## Traveler
 
@@ -54,36 +48,3 @@ Para monitorar seus assentos e seus viajantes, o cocheiro poderá:
 - shouldQuarantine: Retorna true se houver pelo menos uma pessoa não saudável na carroça. Retorna false se não houver.
 
 - totalFood: Retorna o número total de comida de todos os ocupantes da carroça.
-
-## Teste
-
-Insira o seguinte código no final do seu programa para verificar se ele está funcionando apropriadamente. **Atenção** (Não modifique este código!)
-
-```js
-// Criar uma carroça que comporta 2 pessoas
-let wagon = new Wagon(2);
-// Criar três viajantes
-let henrietta = new Traveler('Henrietta');
-let juan = new Traveler('Juan');
-let maude = new Traveler('Maude');
- 
-console.log(`${wagon.getAvailableSeatCount()} should be 2`);
- 
-wagon.join(henrietta);
-console.log(`${wagon.getAvailableSeatCount()} should be 1`);
- 
-wagon.join(juan);
-wagon.join(maude); // Não tem espaço para ela!
-console.log(`${wagon.getAvailableSeatCount()} should be 0`);
- 
-henrietta.hunt(); // pega mais comida
-juan.eat();
-juan.eat(); // juan agora está com fome (doente)
- 
-console.log(`${wagon.shouldQuarantine()} should be true since juan is sick`);
-console.log(`${wagon.totalFood()} should be 3`);
-```
-
-## Envio
-
-Faça o push do código para o seu repositório GitHub e implemente-o GitHub pages. No Canvas, por favor, **envie sua url do GitHub Pages: (ex: https://nomedeusuario.github.io/oregon-trail-with-class)** e envie o link do seu repositório nos comentários. Após ser a correção, seu projeto deverá ficar **privado**.
