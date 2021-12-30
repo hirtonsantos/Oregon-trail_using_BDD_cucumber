@@ -48,3 +48,22 @@ Para monitorar seus assentos e seus viajantes, o cocheiro poderá:
 - shouldQuarantine: Retorna true se houver pelo menos uma pessoa não saudável na carroça. Retorna false se não houver.
 
 - totalFood: Retorna o número total de comida de todos os ocupantes da carroça.
+
+## BDD - Cucumber
+  
+Instalação  
+1º Abra o diretório do seu projeto  
+
+cd meuDiretório  
+2º Inicie o pacote com o comando  
+
+npm init --yes (O "--yes" inicia o pacote sem fazer perguntas)  
+3º Instale o cucumber com o comando  
+
+npm install @cucumber/cucumber  
+
+Caso haja dúvidas acesse o repósitorio ofical do cucumber:  
+
+https://github.com/cucumber/cucumber-js  
+
+
